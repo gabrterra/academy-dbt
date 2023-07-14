@@ -1,0 +1,26 @@
+version: 2
+
+sources:
+  - name: sap
+    schema: sap_adw
+    tables:
+      - name: creditcard
+        columns:
+          - name: creditcardid
+            tests:
+              - unique
+              - not_null
+                
+      - name: store
+      - name: customer
+      - name: person
+      - name: adress
+      - name: stateprovince
+      - name: countryregion
+      - name: product
+      - name: productsubcategory
+      - name: productcategory
+      - name: salesorderheadersalesreason
+      - name: salesreason
+      - name: salesorderheader
+      - name: salesorderdetail
